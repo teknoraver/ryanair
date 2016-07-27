@@ -1,0 +1,76 @@
+c:
+    final void a()
+com.google.ads.Ad:
+    public abstract boolean isReady()
+    public abstract void loadAd(com.google.ads.AdRequest)
+    public abstract void setAdListener(com.google.ads.AdListener)
+    public abstract void stopLoading()
+com.google.ads.AdActivity:
+    public static final java.lang.String BASE_URL_PARAM
+    public static final java.lang.String HTML_PARAM
+    public static final java.lang.String URL_PARAM
+    public static final java.lang.String INTENT_ACTION_PARAM
+    public static final java.lang.String TYPE_PARAM
+    public static final java.lang.String ORIENTATION_PARAM
+com.google.ads.AdRequest:
+    public static final java.lang.String VERSION
+    public static final java.lang.String LOGTAG
+    public void setGender(com.google.ads.AdRequest$Gender)
+    public void setBirthday(java.lang.String)
+    public void setKeywords(java.util.Set)
+    public void setExtras(java.util.Map)
+    public void addExtra(java.lang.String,java.lang.Object)
+    public void setLocation(android.location.Location)
+    public void setTesting(boolean)
+    public void addTestDevice(java.lang.String)
+    public void setTestDevices(java.util.Set)
+com.google.ads.AdSize:
+    public AdSize(int,int)
+com.google.ads.AdView:
+    public AdView(android.app.Activity,com.google.ads.AdSize,java.lang.String)
+    public void destroy()
+    public boolean isReady()
+    public void setAdListener(com.google.ads.AdListener)
+    public void stopLoading()
+com.google.ads.InterstitialAd:
+    private d a
+    public InterstitialAd(android.app.Activity,java.lang.String)
+    public InterstitialAd(android.app.Activity,java.lang.String,boolean)
+    public boolean isReady()
+    public void loadAd(com.google.ads.AdRequest)
+    public void show()
+    public void setAdListener(com.google.ads.AdListener)
+    public void stopLoading()
+com.google.ads.R
+com.google.ads.R$attr
+com.google.ads.R$id
+com.google.ads.R$layout
+d:
+    public final synchronized void b()
+    public final synchronized boolean o()
+    public final synchronized void a(com.google.ads.AdListener)
+    public final synchronized void y()
+    public final synchronized void z()
+net.teknoraver.ryanair.R
+net.teknoraver.ryanair.R$attr
+net.teknoraver.ryanair.R$drawable
+net.teknoraver.ryanair.R$id
+net.teknoraver.ryanair.R$layout
+net.teknoraver.ryanair.R$string
+net.teknoraver.ryanair.Results:
+    static final java.lang.String details
+    static final java.lang.String FROM
+    static final java.lang.String TO
+    static final java.lang.String DATE
+    static final java.lang.String DATE2
+    static final java.lang.String TITLE
+net.teknoraver.ryanair.Ryanair:
+    private static final java.lang.String hostname
+    private static final java.lang.String bookpage
+    private static final java.lang.String selectpage
+    private static final java.lang.String farespage
+    private static final java.lang.String bookpageparams
+    private static final java.lang.String FROM
+    private static final java.lang.String TO
+    private static final java.lang.String DAY
+    private static final java.lang.String MONTH

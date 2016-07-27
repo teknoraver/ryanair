@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Ryanair Flights</string>
+	<string name="from">From</string>
+	<string name="to">To</string>
+	<string name="search">Search</string>
+	<string name="noflight">There are no flights from this airport, try a different one</string>
+	<string name="one">One way</string>
+	<string name="round">Round trip</string>
+	<string name="outward">Outbound</string>
+	<string name="ret">Return</string>
+	<string name="error">Error</string>
+	<string name="connerror">Connection error</string>
+	<string name="selectt">Select airport</string>
+	<string name="selectm">You must select two airports from the lists to make a flight search</string>
+	<string name="baddate">The return date is before the outbound one</string>
+</resources>

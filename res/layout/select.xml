@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView	xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+		android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#c0c0c0c0">
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/logo"/>
+	<RelativeLayout android:layout_height="wrap_content" android:layout_width="fill_parent">
+		<ImageButton android:layout_width="wrap_content" android:id="@+id/invert" android:layout_height="wrap_content" android:layout_gravity="center" android:src="@drawable/invert" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+		<AutoCompleteTextView android:layout_height="wrap_content" android:id="@+id/from" android:hint="@string/from" android:layout_width="fill_parent" android:completionThreshold="1" android:layout_toLeftOf="@id/invert" android:inputType="textAutoComplete" android:imeOptions="actionNext" android:textColor="#000000"/>
+		<AutoCompleteTextView android:layout_height="wrap_content" android:id="@+id/to" android:hint="@string/to" android:layout_width="fill_parent" android:completionThreshold="1" android:layout_toLeftOf="@id/invert" android:layout_below="@id/from" android:inputType="text" android:imeOptions="actionDone" android:textColor="#000000"/>
+	</RelativeLayout>
+	<RadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+		<RadioButton android:layout_width="wrap_content" android:id="@+id/one" android:layout_height="wrap_content" android:checked="true" android:text="@string/one"/>
+		<RadioButton android:layout_width="wrap_content" android:id="@+id/round" android:layout_height="wrap_content" android:text="@string/round"/>
+	</RadioGroup>
+	<TableLayout android:layout_height="wrap_content" android:layout_width="wrap_content">
+		<TableRow android:layout_height="wrap_content" android:layout_width="wrap_content">
+			<TextView android:text="@string/outward" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+			<Button android:layout_height="wrap_content" android:id="@+id/date1" android:layout_width="wrap_content"/>
+		</TableRow>
+		<TableRow android:id="@+id/roundgroup" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TextView android:text="@string/ret" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+			<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/date2"/>
+		</TableRow>
+	</TableLayout>
+	<com.google.ads.AdView
+		android:id="@+id/adView"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		ads:adUnitId="a14d7cd5c2a0f98"
+		ads:adSize="BANNER"
+		ads:loadAdOnCreate="true"/>
+	<Button android:text="@string/search" android:id="@+id/search" android:layout_height="wrap_content" android:layout_width="fill_parent"/>
+</LinearLayout>
+</ScrollView>
